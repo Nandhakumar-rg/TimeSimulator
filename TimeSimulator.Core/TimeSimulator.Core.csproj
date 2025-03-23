@@ -1,9 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 
+		<!-- NuGet package metadata -->
+		<PackageId>TimeSimulator</PackageId>
+		<Version>1.0.0</Version>
+		<Authors>Nandhakumar</Authors>
+		<Company>Full Stack Developer</Company>
+		<Description>A .NET library for simulating accelerated time execution to test time-dependent systems without waiting for real time to pass.</Description>
+		<PackageTags>time;simulation;testing;virtual-time;temporal;scheduler</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageProjectUrl>https://github.com/Nandhakumar-rg/TimeSimulator</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Nandhakumar-rg/TimeSimulator.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+	
 </Project>
